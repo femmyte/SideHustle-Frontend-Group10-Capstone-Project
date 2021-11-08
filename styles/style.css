@@ -1,0 +1,142 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;1,300&display=swap');
+body {
+  background: url('/order-summary-component-main/images/pattern-background-desktop.svg');
+  background-color: var(--pale-blue);
+  background-repeat: no-repeat;
+  padding-top: 20px;
+}
+html {
+  font-size: 16px;
+}
+.container {
+  width: 350px;
+  margin: auto;
+  background-color: #fff;
+  /* padding: 1rem; */
+  border-radius: 20px;
+}
+.banner {
+  width: 350px;
+}
+.banner img {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.box {
+  margin: auto;
+  text-align: center;
+  width: 300px;
+}
+.box h3 {
+  font-size: 23px;
+}
+.text {
+  color: rgba(49, 49, 49, 0.5);
+}
+.plan {
+  background-color: var(--very-pale-blue);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+  border-radius: 10px;
+}
+.icon {
+  width: 35px;
+  height: 35px;
+}
+.price-container {
+  margin: 5px;
+  padding: 10px;
+}
+.price-text {
+  font-weight: 600;
+  margin: 0;
+}
+.price {
+  color: rgba(49, 49, 49, 0.5);
+  margin: 0;
+}
+.change-btn {
+  padding: 0;
+  border: 0;
+  background-color: var(--very-pale-blue);
+}
+.change-btn:hover {
+  cursor: pointer;
+}
+.proceed {
+  margin-top: 20px;
+  background-color: var(--bright-blue);
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 3px 5px 15px var(--desaturated-blue);
+}
+.proceed:hover {
+  cursor: pointer;
+}
+.cancel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  background-color: #fff;
+  color: var(--bright-blue);
+}
+.cancel:hover {
+  cursor: pointer;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  /* text-align: center; */
+}
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+} */
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding-top: 30px;
+  }
+  .container {
+    width: 300px;
+    margin: auto;
+    background-color: #fff;
+    /* padding: 1rem; */
+    border-radius: 20px;
+  }
+  .banner {
+    width: 300px;
+  }
+  .banner img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .box {
+    margin: auto;
+    text-align: center;
+    width: 90%;
+  }
+}
